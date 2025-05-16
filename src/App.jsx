@@ -7,8 +7,8 @@ const App = () => {
 
   return (
     <>
-    {/* {isloading && <LoadingScreen onComplete={()=>setIsloading(true)}/>} */}
-    <LoadingScreen/>
+    {!isloading && <LoadingScreen onComplete={()=>setIsloading(true)}/>}
+    {/* <LoadingScreen onComplete={()=>setIsloading(true)}/> */}
     <div>
     hi there : 
     </div>

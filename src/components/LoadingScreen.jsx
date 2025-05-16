@@ -2,12 +2,28 @@ import React, { useEffect, useState } from 'react'
 import "../index.css"
 const LoadingScreen = ({onComplete}) => {
   const [text, setText] = useState("");
-  const fulltext="hi there i am typing"
+  const fulltext="hi there i am Dipesh"
+  useEffect(() => {
+    let i=0;
+    const interval=setInterval(() => {
+      setText(fulltext.substring(0,i));
+      i++;
+      if(i>fulltext.length){
+        clearInterval(interval);
+        setTimeout(() => {
+          onComplete();
+        }, 1000);
+      }
+    }, 100);
+  
+    // return () => clearInterval(interval);
+  },[]);
+  
   return (
     <div className='fixed inset-0 z-50 bg-black text-gray-100 flex flex-col justify-center items-center'>
       <div className='mb-4 text-4xl font-mono font-bold'>
 
-        i am loading screen <span className='animate-blink ml-1'>|</span>
+        {text} <span className='animate-blink ml-1'>|</span>
       </div>
 
       <div className='w-[200px] h-[2px] bg-gray-800 rounded relative overflow-hidden'>
