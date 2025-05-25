@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import "../index.css"
 const LoadingScreen = ({onComplete}) => {
   const [text, setText] = useState("");
-  const fulltext="hi there i am Dipesh"
+  const fulltext="Code >> Create >> Repeat"
   useEffect(() => {
     let i=0;
     const interval=setInterval(() => {
@@ -16,8 +16,8 @@ const LoadingScreen = ({onComplete}) => {
       }
     }, 100);
   
-    // return () => clearInterval(interval);
-  },[]);
+    return () => clearInterval(interval);
+  },[onComplete]);
   
   return (
     <div className='fixed inset-0 z-50 bg-black text-gray-100 flex flex-col justify-center items-center'>
