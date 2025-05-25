@@ -11,7 +11,7 @@ const Home = () => {
                     I'm a MERN Stack Developer who builds fast, scalable, and user-focused web applications using MongoDB, Express, React, and Node.js.
                 </p>
                 <div className='flex space-x-4 justify-center'>
-                    <a href='#projects' className="bg-blue-500 text-white px-6 py-3 rounded font-medium transition relative overflow-hidden hover:translate-y-0.5 hover:shadow-[0_0_15px_rgba(59,130,246,0.4)]">
+                    <a href='#projects' className="bg-blue-500 text-white px-6 py-3 rounded font-medium transition relative overflow-hidden hover:-translate-y-0.5 hover:shadow-[0_0_15px_rgba(59,130,246,0.4)]">
                         View Projects
                     </a>
                 </div>
