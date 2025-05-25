@@ -6,6 +6,10 @@ const MobileMenu = ({ ismenuopen, setIsmenuopen }) => {
             <button onClick={()=>setIsmenuopen(false)} className='absolute top-6 text-3xl right-6 text-white focus:outline-none cursor-pointer'>
                 &times;
             </button>
+            <a href="#home" onClick={()=>setIsmenuopen(false)} className={`text-2xl font-semi-bold text-white my-4 transform transition-transform duration-300 ${ismenuopen?"opacity-100 translate-y-0":"opacity-0 translate-y-5"}`}>Home</a>
+            <a href="#about" onClick={()=>setIsmenuopen(false)} className={`text-2xl font-semi-bold text-white my-4 transform transition-transform duration-300 ${ismenuopen?"opacity-100 translate-y-0":"opacity-0 translate-y-5"}`}>About</a>
+            <a href="#projects" onClick={()=>setIsmenuopen(false)} className={`text-2xl font-semi-bold text-white my-4 transform transition-transform duration-300 ${ismenuopen?"opacity-100 translate-y-0":"opacity-0 translate-y-5"}`}>Projects</a>
+            <a href="#contact" onClick={()=>setIsmenuopen(false)} className={`text-2xl font-semi-bold text-white my-4 transform transition-transform duration-300 ${ismenuopen?"opacity-100 translate-y-0":"opacity-0 translate-y-5"}`}>Contact</a>
         </div>
     )
 }
