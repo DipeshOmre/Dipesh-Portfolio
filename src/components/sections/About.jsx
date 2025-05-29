@@ -1,4 +1,5 @@
 import React from 'react'
+import RevealOnScroll from '../RevealOnScroll';
 
 const About = () => {
      const frontendSkills = ["React",
@@ -9,6 +10,8 @@ const About = () => {
   const backendSkills = ["Node.js", "Express.js", "MongoDB","JWT", "RESTful APIs"];
   return (
      <section id='about' className='min-h-screen flex items-center justify-center py-20'>
+        <RevealOnScroll>
+
       <div className='max-w-3xl mx-auto px-4'>
         <h2 className='text-3xl font-bold mb-8 bg-gradient-to-r from-blue-500 to-cyan-400 text-center bg-clip-text text-transparent'>About Me</h2>
         <div className='glass rounded-xl border border-white/10 hover:-translate-y-1 transition-all p-8'>
@@ -83,6 +86,7 @@ const About = () => {
 
         </div>
       </div>
+        </RevealOnScroll>
     </section>
   )
 }
