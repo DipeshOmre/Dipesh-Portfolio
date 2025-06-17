@@ -7,12 +7,10 @@ const Contact = () => {
     email:"",
     message:"",
   })
-  const SERVICE_ID="service_1e9lhpw"
-  const TEMPLATE_ID="template_klg5edr"
-  const PUBLIC_KEY="BJsy6iSpvLwVvUgju"
+ 
   const handleSubmit = (e) => {
     e.preventDefault();
-    emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, e.target, PUBLIC_KEY).then((result)=>{
+    emailjs.sendForm(import.meta.env.VITE_SERVICE_ID, import.meta.env.VITE_TEMPLATE_ID, e.target, import.meta.env.VITE_PUBLIC_KEY).then((result)=>{
       alert("Message sent!");
       setFormdata({name:"", email:"", message:""});
     }).catch((error)=>{
