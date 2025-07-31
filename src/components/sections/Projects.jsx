@@ -72,6 +72,27 @@ const Projects = () => {
               hover:text-blue-300 transition-colors margin my-4 '>View Project -</a>
             </div>
           </div>
+
+
+          <div className='p-6 rounded-xl border border-white/10 hover:-translate-y-1 
+          hover:border-blue-500/30
+          hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition-all'>
+            <h3 className='text-xl font-bold mb-2'>React Password Manager</h3>
+            <p className='text-gray-400 mb-4'>React Password Manager is a simple yet functional web application built using the MERN stack that allows users to securely store and manage their passwords. It features a clean and responsive UI built with Tailwind CSS, and provides all basic CRUD operations for managing credentials.</p>
+            <div className='flex flex-wrap gap-2 mb-4'>
+              {["Html", "Css", "JavaScript","Tailwind","MongoDb","Express","Node.js","React"].map((tech, key) => {
+                return (
+                  <span key={key} className='bg-blue-500/10 text-blue-500 py-1 px-3 rounded-full text-sm hover:bg-blue-500/20 hover:shadow-[0__2px_8px_rgba(59,130,246,0.1)] transition-all'>
+                    {tech}
+                  </span>
+                );
+              })}
+            </div>
+            <div className='flex justify-between items-center'>
+              <a href="https://github.com/DipeshOmre/React-Password-Manager" target='_blank' className='text-blue-400 
+              hover:text-blue-300 transition-colors margin my-4 '>View Project -</a>
+            </div>
+          </div>
        
         </div>
       </div>
