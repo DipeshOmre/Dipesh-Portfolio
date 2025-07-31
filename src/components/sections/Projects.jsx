@@ -46,7 +46,7 @@ const Projects = () => {
                 })}
               </div>
               <div className='flex justify-between items-center'>
-                <a href="https://github.com/DipeshOmre/SPOTIFY-clone" className='text-blue-400 
+                <a href="https://github.com/DipeshOmre/SPOTIFY-clone" target='_blank' className='text-blue-400 
               hover:text-blue-300 transition-colors margin my-4 '>View Project -
                   {/* Add your github project link in the href */}
                 </a>
@@ -89,7 +89,7 @@ const Projects = () => {
                 })}
               </div>
               <div className='flex justify-between items-center'>
-                <a href="https://github.com/DipeshOmre/Ascii-image-generator" className='text-blue-400 
+                <a href="https://github.com/DipeshOmre/Ascii-image-generator" target='_blank' className='text-blue-400 
               hover:text-blue-300 transition-colors margin my-4 '>View Project -
                   {/* Add your github project link in the href */}
                 </a>
